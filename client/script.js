@@ -212,9 +212,10 @@ const handleSubmit = async (e) => {
     const messageDiv = document.getElementById(uniqueId)
 
     // messageDiv.innerHTML = "..."
-    loader(messageDiv)
+    loader(messageDiv);
 
     //fetch data from the server -> bot's response
+
     // const response = await fetch('http://localhost:5000/', {
     const response = await fetch('https://codex-i0ts.onrender.com/', {
         method: 'POST',
